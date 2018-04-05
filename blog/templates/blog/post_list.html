@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Codekiing's Daily DIYs and Hack </title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Raleway" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Daily DIYs and Hacks</a></h1>
+        </div>
+      <div><img src="http://tierraeste.com/wp-content/uploads/awesome-diy-string-light-ideas-projects-teens_164210.jpg" alt="Mountain View"></div>  
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% for post in posts %}
+                        <div class="post">
+                            <div class="date">
+                                <p>published: {{ post.published_date }}</p>
+                            </div>
+                            <h1><a href="">{{ post.title }}</a></h1>
+                            <p>{{ post.text|linebreaksbr }}</p>
+                            <a href= 'http://diyprojectsforteens.com/easy-diy-crafts-teens-clothespin-lamp/'>Click here to watch a video.</a>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+https://hasnatwallpapers.blogspot.com/search/label/Hd%20Nature%20Wallpapers.jpg
