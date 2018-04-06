@@ -1,9 +1,11 @@
 .page-header {
-    background-color: #EC6CDF;
+    background-color:background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,0,177,1) 35%, rgba(0,212,255,1) 100%);
     margin-top: 0;
     padding: 20px 20px 20px 40px;
-}
 
+    }
+}
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #DFD4DE;
     font-size: 36pt;

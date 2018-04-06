@@ -11,7 +11,8 @@ class Post(models.Model):
     published_date = models.DateTimeField(
             blank=True, null=True)
     link = models.URLField(blank=True)
-
+    photo=models.URLField(blank=True)
+    
     def publish(self):
         self.published_date = timezone.now()
         self.save()
